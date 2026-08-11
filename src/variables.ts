@@ -1,3 +1,6 @@
+
+
+
 let money:null = null;
 let age: number = 10;
 let name: string = "sarang";
