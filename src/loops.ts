@@ -1,3 +1,5 @@
+import a1, { combine as kuchbhi } from "./function";
+
 // for,
 for(let i:number = 0; i<10; i++) {
     // console.log("first one");
@@ -16,6 +18,9 @@ while(j<10) {
 let k:number = 10;
 
 do {
-  console.log("siddhant");
+//   console.log("siddhant");
   k--;
 } while(k>=0);
+
+console.log(kuchbhi(10,20));
+console.log(a1)
