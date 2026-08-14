@@ -47,7 +47,7 @@ const arr = [1, 2, 3];
 // console.log(...arr); // 1 2 3
 
 // Higher-Order Functions and Callbacks (arg:string)=>return_type
-function bomb(a:(str:string)=>string = (str:string) => { return str + " jii" }):void { 
+function bomb(a:(str:string)=>string  = (str:string) => { return str + " jii" } ):void { 
   if(a) console.log(a("hamza"))
 }
 
@@ -55,7 +55,7 @@ function bomb(a:(str:string)=>string = (str:string) => { return str + " jii" }):
 function a(str:string) { return str + " jii" }
 
 // higher order function
-// bomb(a);
+bomb();
 
 
 // a function which having same amount of parameter 
@@ -64,6 +64,7 @@ function a(str:string) { return str + " jii" }
 export function combine(a: number, b: number): number;
 export function combine(a: string, b: string): string; 
 export function combine(a: number, b: string): string; 
+export function combine(a: string, b: number): string; 
 export function combine(a: any, b: any): any {
   return a + b;
 }
