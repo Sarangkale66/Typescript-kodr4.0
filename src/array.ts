@@ -1,3 +1,5 @@
+
+
 // nnssbbu --> primitive
 // referneces [] {}
 
@@ -18,7 +20,7 @@ function deep(arr1: unknown[]): (unknown[] | null) {
     }
 }
 
-const arr1 = [11, 2, 33, 4, [1, 22, 3, [10, 2, [101, 102]]], null];
+const arr1:(number|(number|(number|number[])[])[]|null)[] = [11, 2, 33, 4, [1, 22, 3, [10, 2, [101, 102]]], null];
 const arr2 = deep(arr1); // deepCopy
 
 if(arr2) {
@@ -30,3 +32,7 @@ if(arr2) {
 
 console.log(arr1);
 console.log(arr2);
+
+// tuples
+let tup: [number, string, any] = [10, "sarang", null];
+
