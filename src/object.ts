@@ -11,12 +11,13 @@ type TNewObj = {
 
 // import type { IObj } from "./object"
 export interface IObj {
-    name: string;
+    readonly name: string;
     wife: string;
     dob: string;
     arr: TObjArr[];
     newObj: TNewObj;
 }
+
 
 let obj:IObj = {
   name: "paju",
@@ -32,8 +33,5 @@ let obj:IObj = {
     hobbie: "ladkiya patana"
   }
 };
-
-
-Object.freeze(obj);
 
 console.log(obj)
