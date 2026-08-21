@@ -11,11 +11,11 @@ type TNewObj = {
 
 // import type { IObj } from "./object"
 export interface IObj {
-    readonly name: string;
+    name?: string;
     wife: string;
-    dob: string;
-    arr: TObjArr[];
-    newObj: TNewObj;
+    dob?: string;
+    arr?: TObjArr[];
+    newObj?: TNewObj;
 }
 
 

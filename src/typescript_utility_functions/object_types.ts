@@ -3,11 +3,11 @@ import createUser from "./function_utility_types";
 // Pick<T, K>	
 // type INewObj = Pick<IObj, "arr" | "newObj" >
 // IObj {
-//     name: string;
-//     wife: string;
-//     dob: string;
-//     arr: TObjArr[];
-//     newObj: TNewObj;
+//     name?: string;
+//     wife?: string;
+//     dob?: string;
+//     arr?: TObjArr[];
+//     newObj?: TNewObj;
 // }
 
 // Omit
@@ -55,7 +55,3 @@ const users:UserMap = {
     }
 }
 
-
-type TCreateUser = ReturnType<typeof createUser>
-
-type TParamCreateUser = Parameters<typeof createUser>

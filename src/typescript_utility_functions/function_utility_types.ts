@@ -8,3 +8,7 @@ export default function createUser(name:string, age:number) {
     age
    }
 }
+
+type TCreateUser = ReturnType<typeof createUser>
+
+type TParamCreateUser = Parameters<typeof createUser>
